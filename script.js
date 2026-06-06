@@ -205,9 +205,9 @@ document.addEventListener('DOMContentLoaded', () => {
             projectsDiv.classList.toggle('collapsed');
             
             if (projectsDiv.classList.contains('collapsed')) {
-                button.innerHTML = '<i class="fa-solid fa-chevron-down"></i> Show Project Details';
+                button.innerHTML = '<i class="fa-solid fa-chevron-down"></i> Show Details';
             } else {
-                button.innerHTML = '<i class="fa-solid fa-chevron-up"></i> Hide Project Details';
+                button.innerHTML = '<i class="fa-solid fa-chevron-up"></i> Hide Details';
             }
         });
     });
