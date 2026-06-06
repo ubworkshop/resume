@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wulan Bateer | Senior SRE & Hybrid Cloud Architect Resume</title>
+    <meta name="description"
+        content="Professional portfolio of Wulan Bateer, a Senior SRE, DevOps Specialist, and Hybrid Cloud Architect with 10 years of experience managing large-scale cloud native infrastructures.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Background Canvas for Particles -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Header / Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-w">W</span><span class="logo-b">B</span>
+            </a>
+            <nav class="nav-links">
+                <a href="#about"><i class="fa-regular fa-user"></i> About</a>
+                <a href="#skills"><i class="fa-solid fa-code"></i> Skills</a>
+                <a href="#experience"><i class="fa-regular fa-briefcase"></i> Experience</a>
+                <a href="#languages"><i class="fa-solid fa-globe"></i> Languages</a>
+            </nav>
+            <button id="theme-toggle" aria-label="Toggle theme">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-grid">
+                <div class="hero-info">
+                    <span class="hero-welcome">Welcome to my portfolio</span>
+                    <h1 class="hero-name">Wulan Bateer</h1>
+                    <div class="typewriter-container">
+                        <span class="typewriter-prefix">I am a </span>
+                        <span id="typewriter-text"></span><span class="typewriter-cursor">|</span>
+                    </div>
+                    <p class="hero-tagline">
+                        Senior SRE, DevOps Specialist, and Hybrid Cloud Architect with 10 years of expertise in IT (15
+                        years total). Dedicated to managing massive-scale, high-availability infrastructures, enhancing
+                        reliability, and driving seamless automation in global environments.
+                    </p>
+                    <div class="contact-grid">
+                        <a href="mailto:ulaan9072@gmail.com" class="contact-item">
+                            <i class="fa-regular fa-envelope"></i>
+                            <span>ulaan9072@gmail.com</span>
+                        </a>
+                        <a href="tel:+8615849379072" class="contact-item">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                            <span>+86 158 4937 9072</span>
+                        </a>
+                        <span class="contact-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Inner Mongolia, China (Relocating Overseas)</span>
+                        </span>
+                    </div>
+                    <div class="social-actions">
+                        <a href="https://github.com/ubworkshop" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-outline">
+                            <i class="fa-brands fa-github"></i> GitHub
+                        </a>
+                        <a href="https://linkedin.com/in/baatar-ulaan-63667b98" target="_blank"
+                            rel="noopener noreferrer" class="btn btn-outline">
+                            <i class="fa-brands fa-linkedin"></i> LinkedIn
+                        </a>
+                        <a href="#contact" class="btn btn-primary">
+                            <i class="fa-regular fa-paper-plane"></i> Contact Me
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <!-- Geometric Tech Badge -->
+                    <div class="tech-badge-container">
+                        <div class="glow-sphere"></div>
+                        <div class="tech-card glass">
+                            <div class="tech-icon-circle">
+                                <i class="fa-solid fa-cloud-bolt"></i>
+                            </div>
+                            <h3>Cloud & SRE Native</h3>
+                            <p>Architecting production grade virtualization & container orchestrations</p>
+                            <div class="tech-tags">
+                                <span>Kubernetes</span>
+                                <span>Docker</span>
+                                <span>OpenStack</span>
+                                <span>KVM</span>
+                                <span>Hybrid Cloud</span>
+                                <span>Alibaba Cloud</span>
+                                <span>Huawei Cloud</span>
+                                <span>Terraform</span>
+                                <span>Ansible</span>
+                                <span>Ceph Storage</span>
+                                <span>Calico</span>
+                                <span>MQTT</span>
+                                <span>OpenResty</span>
+                                <span>RabbitMQ</span>
+                                <span>MariaDB</span>
+                                <span>HAProxy</span>
+                                <span>Prometheus</span>
+                                <span>Grafana</span>
+                                <span>ELK Stack</span>
+                                <span>Skywalking</span>
+                                <span>CI/CD</span>
+                                <span>Chaos Engineering</span>
+                                <span>SRE</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats-section">
+            <div class="stats-container">
+                <div class="stat-card glass">
+                    <div class="stat-icon"><i class="fa-solid fa-server"></i></div>
+                    <div class="stat-number" data-target="2200">0</div>
+                    <div class="stat-label">Cloud Nodes Managed</div>
+                </div>
+                <div class="stat-card glass">
+                    <div class="stat-icon"><i class="fa-solid fa-database"></i></div>
+                    <div class="stat-number-wrapper"><span class="stat-number" data-target="10">0</span><span
+                            class="stat-unit">PB+</span></div>
+                    <div class="stat-label">Ceph Storage Administered</div>
+                </div>
+                <div class="stat-card glass">
+                    <div class="stat-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <div class="stat-number-wrapper"><span class="stat-number" data-target="99">0</span><span
+                            class="stat-decimals">.99</span><span class="stat-unit">%</span></div>
+                    <div class="stat-label">Production SLA Uptime</div>
+                </div>
+                <div class="stat-card glass">
+                    <div class="stat-icon"><i class="fa-solid fa-comments"></i></div>
+                    <div class="stat-number" data-target="4">0</div>
+                    <div class="stat-label">Languages Spoken</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="about-section scroll-reveal">
+            <h2 class="section-title"><i class="fa-regular fa-user-circle"></i> Profile & Career Vision</h2>
+            <div class="about-grid">
+                <div class="about-text glass">
+                    <p>
+                        With 15 years of professional career experience, I have dedicated the last <strong>10 years to
+                            the IT industry</strong>, developing extensive expertise across hybrid cloud engineering,
+                        Site Reliability Engineering (SRE), and DevOps methodologies. My technical core lies in
+                        orchestrating enterprise infrastructures, ranging from <strong>OpenStack/KVM private
+                            clouds</strong> to <strong>Docker/Kubernetes container systems</strong>, ensuring robust
+                        architectural stability.
+                    </p>
+                    <p>
+                        In my early career, I spent 5 years as a Project Coordinator and Technical Translator for a
+                        German enterprise (Big Dutchman), which cultivated a highly disciplined approach to cross-border
+                        communications, project timelines, and technical documentation localization.
+                    </p>
+                    <p>
+                        I hold a deep respect for modern, high-quality engineering standards and meticulous attention to
+                        detail. Currently, I am actively seeking a long-term role overseas to apply my DevOps/SRE skills
+                        to strengthen infrastructure scalability, build automation pipelines, and facilitate
+                        cross-border technical collaboration.
+                    </p>
+                </div>
+                <div class="about-highlights glass">
+                    <h3>Core Competencies</h3>
+                    <ul class="highlight-list">
+                        <li>
+                            <i class="fa-solid fa-circle-check"></i>
+                            <div>
+                                <strong>Large-scale Operations:</strong> Experienced in running high-density
+                                infrastructures (2,200+ nodes) across public & private clouds.
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-circle-check"></i>
+                            <div>
+                                <strong>Enterprise Observability:</strong> Skilled in integrating Prometheus, Grafana,
+                                ELK, and Skywalking to track complex system behaviors and trace grid operations.
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-circle-check"></i>
+                            <div>
+                                <strong>Infrastructure as Code:</strong> Championing automated delivery via Terraform
+                                and Ansible, shrinking provisioning cycles from days to minutes.
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-circle-check"></i>
+                            <div>
+                                <strong>Cross-cultural Adaptability:</strong> Confidently bridges international
+                                boundaries, translating business requirements into concrete architectural designs.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section scroll-reveal">
+            <h2 class="section-title"><i class="fa-solid fa-sliders"></i> Skills Portfolio</h2>
+            <div class="skills-grid">
+                <!-- Skill Category 1 -->
+                <div class="skill-category glass">
+                    <div class="category-header">
+                        <i class="fa-solid fa-cubes"></i>
+                        <h3>Containers & Orchestration</h3>
+                    </div>
+                    <div class="skill-bars">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Kubernetes (K8s)</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Docker</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Helm & Operators</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Calico Networking</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill Category 2 -->
+                <div class="skill-category glass">
+                    <div class="category-header">
+                        <i class="fa-solid fa-cloud"></i>
+                        <h3>Cloud & Virtualization</h3>
+                    </div>
+                    <div class="skill-bars">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>OpenStack</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Hybrid Cloud Architectures</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Alibaba Cloud / Huawei Cloud</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>KVM Hypervisor</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill Category 3 -->
+                <div class="skill-category glass">
+                    <div class="category-header">
+                        <i class="fa-solid fa-chart-line"></i>
+                        <h3>SRE & Observability</h3>
+                    </div>
+                    <div class="skill-bars">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Prometheus & Alertmanager</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Grafana Dashboards</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>ELK / EFK Stack</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>APM & Tracing (Skywalking)</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill Category 4 -->
+                <div class="skill-category glass">
+                    <div class="category-header">
+                        <i class="fa-solid fa-gears"></i>
+                        <h3>IaC & Storage & Optimizations</h3>
+                    </div>
+                    <div class="skill-bars">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Ansible (Playbook Automation)</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Terraform</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Ceph Distributed Storage</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Linux Kernel Tuning</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience-section scroll-reveal">
+            <h2 class="section-title"><i class="fa-regular fa-clock"></i> Professional Experience</h2>
+            <div class="timeline">
+
+                <!-- Timeline Item 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Apr 2021 – Present</div>
+                    <div class="timeline-content glass">
+                        <div class="experience-header">
+                            <div>
+                                <h3 class="role-title">Hybrid Cloud Architect / Senior SRE / DevOps</h3>
+                                <h4 class="company-name">Inner Mongolia Power Group</h4>
+                            </div>
+                            <span class="exp-badge">Current</span>
+                        </div>
+                        <p class="company-desc">Large-scale state-owned power grid enterprise, managing power dispatch
+                            grids and core business networks.</p>
+
+                        <div class="tech-stack-used">
+                            <strong>Tech Stack:</strong>
+                            <span class="tag">Hybrid Cloud</span><span class="tag">Alibaba Cloud</span><span
+                                class="tag">Huawei Cloud</span><span class="tag">Kubernetes</span><span
+                                class="tag">Docker</span><span class="tag">Prometheus</span><span
+                                class="tag">MQTT</span><span class="tag">Ansible</span><span
+                                class="tag">Terraform</span><span class="tag">Skywalking</span><span class="tag">ELK
+                                Stack</span>
+                        </div>
+
+                        <div class="projects-toggle-wrapper">
+                            <button class="btn-toggle-projects"><i class="fa-solid fa-chevron-down"></i> Show Project
+                                Details</button>
+                        </div>
+
+                        <div class="experience-projects collapsed">
+                            <!-- Project A -->
+                            <div class="project-card">
+                                <h5 class="project-title"><i class="fa-solid fa-network-wired"></i> Project 1: Hybrid
+                                    Cloud Infrastructure & SRE Operations Governance</h5>
+                                <span class="project-role">Role: Senior Cloud Operations Engineer / SRE</span>
+                                <ul class="project-bullets">
+                                    <li><strong>Multi-Cloud Design & High Availability:</strong> Spearheaded the
+                                        dual-platform architecture (Alibaba Cloud and Huawei Cloud) managing over 2,200
+                                        nodes. Engineered cross-AZ Disaster Recovery (DR) configuration, achieving SLA
+                                        uptime of 99.99%.</li>
+                                    <li><strong>Infrastructure as Code (IaC):</strong> Devised and maintained Terraform
+                                        configurations and Ansible Playbooks for multi-cloud deployments, compressing
+                                        resource delivery cycles from days to minutes.</li>
+                                    <li><strong>Observability Platform Integration:</strong> Automated logging and
+                                        monitoring aggregation, consolidating disparate vendor tools into a centralized
+                                        Prometheus framework based on site reliability Golden Signals to provide
+                                        real-time proactive alerts.</li>
+                                    <li><strong>Incident Resolution & Self-healing:</strong> Served as Level-2/3
+                                        escalation contact for major incidents. Programmed automated remediation scripts
+                                        to recover from common system faults, slicing manual maintenance hours.</li>
+                                </ul>
+                            </div>
+                            <!-- Project B -->
+                            <div class="project-card">
+                                <h5 class="project-title"><i class="fa-solid fa-network-wired"></i> Project 2:
+                                    End-to-End Operation Management of IoT Grid Control Platform</h5>
+                                <span class="project-role">Role: Project Manager & SRE Lead</span>
+                                <ul class="project-bullets">
+                                    <li><strong>Hybrid Deploy Architecture:</strong> Architected the platform from 0 to
+                                        1, designing a secure hybrid deployment layout utilizing VMs for stateful
+                                        databases/middleware and Kubernetes clusters for stateless microservices.</li>
+                                    <li><strong>Container Scaling Optimization:</strong> Containerized mission-critical
+                                        components (such as MQTT brokers) and configured fine-tuned Horizontal Pod
+                                        Autoscaling (HPA) to maintain peak power dispatch loads smoothly.</li>
+                                    <li><strong>IoT Monitoring & Tracing:</strong> Integrated Apache Skywalking and ELK
+                                        stack to map communication streams across grids, reducing average resolution and
+                                        log analysis times by over 60%.</li>
+                                    <li><strong>Chaos Engineering:</strong> Formulated systematic chaos testing drills
+                                        to actively disrupt and verify redundancy protocols, eliminating single points
+                                        of failure (SPOFs) and achieving zero unplanned downtime.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Aug 2018 – Apr 2021</div>
+                    <div class="timeline-content glass">
+                        <div class="experience-header">
+                            <div>
+                                <h3 class="role-title">Microservice DevOps Engineer / Pre-sales Consultant</h3>
+                                <h4 class="company-name">China Mobile Communications Group (Inner Mongolia) Co., Ltd.
+                                </h4>
+                            </div>
+                        </div>
+                        <p class="company-desc">Regional branch of China's largest telecom carrier, providing
+                            telecommunication services, private networking, and digital enterprise solutions.</p>
+
+                        <div class="tech-stack-used">
+                            <strong>Tech Stack:</strong>
+                            <span class="tag">Kubernetes</span><span class="tag">Calico</span><span
+                                class="tag">Prometheus</span><span class="tag">ELK</span><span
+                                class="tag">Helm</span><span class="tag">Kubernetes Operator</span><span
+                                class="tag">LDAP</span><span class="tag">OpenResty</span>
+                        </div>
+
+                        <div class="projects-toggle-wrapper">
+                            <button class="btn-toggle-projects"><i class="fa-solid fa-chevron-down"></i> Show Project
+                                Details</button>
+                        </div>
+
+                        <div class="experience-projects collapsed">
+                            <div class="project-card">
+                                <h5 class="project-title"><i class="fa-solid fa-network-wired"></i> Project 1:
+                                    Cloud-Native Platform Integration & SRE Management</h5>
+                                <ul class="project-bullets">
+                                    <li><strong>DCOS Platform Operation:</strong> Maintained a high-density DCOS
+                                        container platform utilizing Kubernetes, Calico networking, Prometheus, and EFK
+                                        stack, leveraging Helm charts and Operators for unified components
+                                        standardization.</li>
+                                    <li><strong>Full Lifecycle Governance:</strong> Supervised the complete service
+                                        lifecycle from architectural drafting to final post-deployment optimizations.
+                                        Designed deep-level monitoring structures via Prometheus and Alertmanager to
+                                        streamline pager alerts.</li>
+                                    <li><strong>Multi-tenancy & Isolation:</strong> Integrated centralized LDAP
+                                        directory authorization, tuned OpenResty ingress configs for precise load
+                                        balancing, and established strict namespace policies (Quotas/Limits) to assure
+                                        multi-tenant workspace isolation.</li>
+                                </ul>
+                            </div>
+                            <div class="project-card">
+                                <h5 class="project-title"><i class="fa-solid fa-handshake"></i> Project 2: Solution
+                                    Consulting & IT Infrastructure Pre-sales</h5>
+                                <ul class="project-bullets">
+                                    <li><strong>Strategic Consulting:</strong> Acted as technical interface to major
+                                        enterprise clients, conducting requirements gathering, composing project
+                                        blueprints, feasibility studies (FS), and roadmap directions.</li>
+                                    <li><strong>Bid Proposal & Technical Support:</strong> Collaborated with sales
+                                        leads, presenting architectural demonstrations and calculating accurate cost
+                                        estimations. Generated comprehensive system integration layouts spanning cloud
+                                        deployments, disaster recovery, big data pools, and 4G/5G private network
+                                        architectures.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Feb 2016 – Aug 2018</div>
+                    <div class="timeline-content glass">
+                        <div class="experience-header">
+                            <div>
+                                <h3 class="role-title">Cloud Infrastructure Engineer / DevOps / Infrastructure Team Lead
+                                </h3>
+                                <h4 class="company-name">Inner Mongolia Yunke Data Service Co., Ltd.</h4>
+                            </div>
+                        </div>
+                        <p class="company-desc">Regional cloud service provider and data center operator specializing in
+                            private cloud deployments and virtualization architectures.</p>
+
+                        <div class="tech-stack-used">
+                            <strong>Tech Stack:</strong>
+                            <span class="tag">OpenStack</span><span class="tag">Ceph Storage</span><span
+                                class="tag">KVM</span><span class="tag">Ansible</span><span
+                                class="tag">RabbitMQ</span><span class="tag">MariaDB</span><span
+                                class="tag">HAProxy</span><span class="tag">Linux Kernel Tuning</span>
+                        </div>
+
+                        <div class="projects-toggle-wrapper">
+                            <button class="btn-toggle-projects"><i class="fa-solid fa-chevron-down"></i> Show Project
+                                Details</button>
+                        </div>
+
+                        <div class="experience-projects collapsed">
+                            <div class="project-card">
+                                <h5 class="project-title"><i class="fa-solid fa-cubes"></i> Project 1: High-Performance
+                                    OpenStack Private Cloud Deployment</h5>
+                                <ul class="project-bullets">
+                                    <li><strong>Automated Deployments (IaC):</strong> Programmed custom Ansible
+                                        Playbooks to deploy a multi-node OpenStack private cloud running thousands of VM
+                                        instances, accelerating environment provisioning times from weeks to hours.</li>
+                                    <li><strong>Control Plane Redundancy:</strong> Designed active-active
+                                        high-availability (HA) setups for OpenStack microservices (RabbitMQ, MariaDB,
+                                        Keystone) using HAProxy and Keepalived to deliver a resilient SLA of 99.9%.</li>
+                                    <li><strong>Kernel Level Virtualization Optimization:</strong> Researched
+                                        virtualization whitepapers and implemented low-level hypervisor modifications
+                                        (CPU Pinning, Hugepages allocation), reducing disk and network I/O latencies for
+                                        mission-critical DB instances.</li>
+                                </ul>
+                            </div>
+                            <div class="project-card">
+                                <h5 class="project-title"><i class="fa-solid fa-database"></i> Project 2: PB-Scale Ceph
+                                    Distributed Storage Administration</h5>
+                                <ul class="project-bullets">
+                                    <li><strong>No-Downtime Infrastructure:</strong> Managed a Petabyte-scale Ceph
+                                        storage cluster. Established strict Standard Operating Procedures (SOP) for
+                                        automated hot-swapping failed drives and cluster horizontal expansions with zero
+                                        customer-facing downtime.</li>
+                                    <li><strong>CRUSH Map Tuning & Reliability:</strong> Tailored CRUSH map rule sets to
+                                        match server topologies, enforcing data replicas distribution across physical
+                                        server racks to achieve reliable data redundancy.</li>
+                                    <li><strong>Benchmarking & Scaling:</strong> Conducted stress testing via
+                                        FIO/Rados-bench, optimized MTU sizes (Jumbo Frames) on 10G networks, boosting
+                                        cluster throughput during heavy backup cycles.</li>
+                                </ul>
+                            </div>
+                            <div class="project-card">
+                                <h5 class="project-title"><i class="fa-solid fa-cloud"></i> Project 3: L2 Expert Support
+                                    for Meteorological Bureau Private Cloud</h5>
+                                <ul class="project-bullets">
+                                    <li><strong>Full-Stack Observability:</strong> Structured a multi-tier monitoring
+                                        setup using Zabbix and Grafana, mapping indicators from server chassis sensors,
+                                        hypervisor nodes, up to running customer applications.</li>
+                                    <li><strong>Event-driven Operations:</strong> Administered a 27-node OpenStack and
+                                        Ceph cluster. Analyzed log trends to prevent memory leaks and hardware failures
+                                        before they impacted weather processing pipelines.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 4 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Sep 2010 – Dec 2015</div>
+                    <div class="timeline-content glass">
+                        <div class="experience-header">
+                            <div>
+                                <h3 class="role-title">Project Coordinator / Technical Translator & Interpreter</h3>
+                                <h4 class="company-name">Big Dutchman (China) Agricultural Machinery Equipment Co., Ltd.
+                                </h4>
+                            </div>
+                        </div>
+                        <p class="company-desc">Chinese subsidiary of the German agricultural equipment manufacturer Big
+                            Dutchman, implementing industrial livestock automation solutions.</p>
+
+                        <div class="tech-stack-used">
+                            <strong>Core Skills:</strong>
+                            <span class="tag">Technical Translation</span><span class="tag">English/Chinese
+                                Interpreting</span><span class="tag">Cross-Border Project Management</span><span
+                                class="tag">Equipment Commissioning Support</span>
+                        </div>
+
+                        <div class="projects-toggle-wrapper">
+                            <button class="btn-toggle-projects"><i class="fa-solid fa-chevron-down"></i> Show Project
+                                Details</button>
+                        </div>
+
+                        <div class="experience-projects collapsed">
+                            <div class="project-card">
+                                <h5 class="project-title"><i class="fa-solid fa-language"></i> Project 1: Technical
+                                    Translation & localization Support</h5>
+                                <ul class="project-bullets">
+                                    <li><strong>On-Site Technical Interpreting:</strong> Provided verbal English/Chinese
+                                        translations during heavy automation equipment commissionings, facilitating
+                                        cooperation between German engineering experts and local assembly crews.</li>
+                                    <li><strong>Documentation Localization:</strong> Translated technical hardware
+                                        manuals, control systems wiring schematics, and operating guidelines from
+                                        English to Chinese, creating standardized references for the domestic
+                                        after-sales network.</li>
+                                </ul>
+                            </div>
+                            <div class="project-card">
+                                <h5 class="project-title"><i class="fa-solid fa-list-check"></i> Project 2: Cross-Border
+                                    Project Operations Support</h5>
+                                <ul class="project-bullets">
+                                    <li><strong>Multi-stakeholder Collaboration:</strong> Managed communication
+                                        protocols between the German headquarters and Chinese divisions. Handled
+                                        schedule alignments and resolved communication gaps caused by time-zones or
+                                        localization.</li>
+                                    <li><strong>Technical Incident Reporting:</strong> Drafted detailed technical issue
+                                        reports in English to collaborate with German designers to quickly resolve
+                                        mechanical/electrical assembly faults encountered on-site.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Languages & Certifications Section -->
+        <section id="languages" class="lang-cert-section scroll-reveal">
+            <div class="lang-cert-grid">
+
+                <!-- Languages Card -->
+                <div class="languages-card glass">
+                    <h2 class="card-section-title"><i class="fa-solid fa-language"></i> Language Fluency</h2>
+                    <p class="section-subtitle-text">Demonstrated capability in working inside multicultural and
+                        multinational organizations.</p>
+                    <div class="lang-rings-container">
+                        <!-- Ring 1: Mongolian -->
+                        <div class="lang-ring-item">
+                            <div class="ring-progress" data-percentage="100">
+                                <svg class="svg-ring" viewBox="0 0 120 120">
+                                    <circle class="ring-bg" cx="60" cy="60" r="50"></circle>
+                                    <circle class="ring-fill" cx="60" cy="60" r="50"></circle>
+                                </svg>
+                                <span class="ring-text">Native</span>
+                            </div>
+                            <span class="lang-label">Mongolian</span>
+                        </div>
+                        <!-- Ring 2: Chinese -->
+                        <div class="lang-ring-item">
+                            <div class="ring-progress" data-percentage="100">
+                                <svg class="svg-ring" viewBox="0 0 120 120">
+                                    <circle class="ring-bg" cx="60" cy="60" r="50"></circle>
+                                    <circle class="ring-fill" cx="60" cy="60" r="50"></circle>
+                                </svg>
+                                <span class="ring-text">Native</span>
+                            </div>
+                            <span class="lang-label">Chinese</span>
+                        </div>
+                        <!-- Ring 3: English -->
+                        <div class="lang-ring-item">
+                            <div class="ring-progress" data-percentage="95">
+                                <svg class="svg-ring" viewBox="0 0 120 120">
+                                    <circle class="ring-bg" cx="60" cy="60" r="50"></circle>
+                                    <circle class="ring-fill" cx="60" cy="60" r="50"></circle>
+                                </svg>
+                                <span class="ring-text">TEM-8</span>
+                            </div>
+                            <span class="lang-label">English</span>
+                        </div>
+                        <!-- Ring 4: Japanese -->
+                        <div class="lang-ring-item">
+                            <div class="ring-progress" data-percentage="70">
+                                <svg class="svg-ring" viewBox="0 0 120 120">
+                                    <circle class="ring-bg" cx="60" cy="60" r="50"></circle>
+                                    <circle class="ring-fill" cx="60" cy="60" r="50"></circle>
+                                </svg>
+                                <span class="ring-text">Business</span>
+                            </div>
+                            <span class="lang-label">Japanese</span>
+                        </div>
+                    </div>
+                    <div class="lang-notes">
+                        <p><i class="fa-solid fa-circle-info"></i> Currently learning advanced business Japanese to
+                            prepare for professional engagement overseas.</p>
+                    </div>
+                </div>
+
+                <!-- Certifications Card -->
+                <div class="certifications-card glass">
+                    <h2 class="card-section-title"><i class="fa-solid fa-award"></i> Certifications & Credentials</h2>
+                    <ul class="cert-list">
+                        <li>
+                            <div class="cert-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                            <div class="cert-details">
+                                <span class="cert-date">2010</span>
+                                <h4>TEM-8 (Test for English Majors - Grade 8)</h4>
+                                <p>Highest professional certification level for English linguistics majors in China.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cert-icon"><i class="fa-solid fa-certificate"></i></div>
+                            <div class="cert-details">
+                                <span class="cert-date">2008</span>
+                                <h4>TEM-4 (Test for English Majors - Grade 4)</h4>
+                                <p>Professional certification for English Majors.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cert-icon"><i class="fa-solid fa-certificate"></i></div>
+                            <div class="cert-details">
+                                <span class="cert-date">2009</span>
+                                <h4>CJT-4 (College Japanese Test - Grade 4)</h4>
+                                <p>Certified proficiency in college-level Japanese language studies.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cert-icon"><i class="fa-solid fa-id-card"></i></div>
+                            <div class="cert-details">
+                                <span class="cert-date">2010</span>
+                                <h4>Chinese Driver's License (Class C1)</h4>
+                                <p>Licensed to operate manual & automatic passenger automobiles.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact Section / Interactive Footer Area -->
+        <section id="contact" class="contact-section-footer scroll-reveal">
+            <div class="contact-card glass">
+                <h2>Ready to connect?</h2>
+                <p>I am highly motivated to join a forward-thinking SRE, DevOps, or Cloud Engineering team overseas.
+                    Let's discuss how my technical skills and multi-lingual capabilities can support your team.</p>
+                <div class="contact-btn-group">
+                    <a href="mailto:ulaan9072@gmail.com" class="btn btn-primary btn-large">
+                        <i class="fa-regular fa-envelope"></i> Send an Email
+                    </a>
+                    <a href="tel:+8615849379072" class="btn btn-outline btn-large">
+                        <i class="fa-solid fa-phone"></i> Call Me
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2026 Wulan Bateer. Handcrafted with passion using semantic HTML & CSS.</p>
+            <a href="#" class="back-to-top" id="scroll-to-top" aria-label="Scroll to top">
+                <i class="fa-solid fa-arrow-up"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
