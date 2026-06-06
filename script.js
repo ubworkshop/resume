@@ -384,4 +384,35 @@ document.addEventListener('DOMContentLoaded', () => {
         scrollTopBtn.style.pointerEvents = 'none';
         scrollTopBtn.style.transition = 'opacity 0.3s, transform 0.3s';
     }
+
+    /* ==========================================
+       7. PDF Export Trigger Logic
+       ========================================== */
+    const triggerPDFExport = () => {
+        // Force expand all projects and responsibilities so no hidden text gets cut off in PDF
+        const projectPanels = document.querySelectorAll('.experience-projects');
+        const toggleBtns = document.querySelectorAll('.btn-toggle-projects');
+        
+        projectPanels.forEach(panel => {
+            panel.classList.remove('collapsed');
+        });
+        
+        toggleBtns.forEach(btn => {
+            btn.classList.add('active');
+            btn.innerHTML = '<i class="fa-solid fa-chevron-up"></i> Hide Details';
+        });
+
+        // Delay marginally to ensure reflow completes before launching print
+        setTimeout(() => {
+            window.print();
+        }, 200);
+    };
+
+    const pdfBtnNav = document.getElementById('nav-export-pdf');
+    if (pdfBtnNav) {
+        pdfBtnNav.addEventListener('click', (e) => {
+            e.preventDefault();
+            triggerPDFExport();
+        });
+    }
 });
