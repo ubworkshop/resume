@@ -50,6 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const roles = [
         'Hybrid Cloud Architect',
         'AWS Cloud Engineer',
+        'Project Management',
         'Senior SRE Engineer',
         'DevOps Specialist',
         'Multilingual Communicator'
